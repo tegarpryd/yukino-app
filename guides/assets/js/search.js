@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 		searchResultsContainer.style.display = "flex";
 		results.sort((a, b) => a.score - b.score).forEach(({ item }, i) => {
-			searchResults.innerHTML += `<li><a href="${item.url}" style="color: var(--light);"><span style="opacity: 0.75;">${i + 1}.</span> ${item.title}</a></li>`;
+			searchResults.innerHTML += `<li><a href="${item.url}" style="color: var(--light); width: 100%;"><span style="opacity: 0.75;">${i + 1}.</span> ${item.title}</a></li>`;
 		});
 	}
 
