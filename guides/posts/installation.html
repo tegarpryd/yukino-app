@@ -15,14 +15,23 @@
     href="/yukino-app/guides/assets/css/main.css"
 />
 
+<script src="/yukino-app/guides/assets/js/fuse.js"></script>
 <script src="/yukino-app/guides/assets/js/theme.js"></script>
+<script src="/yukino-app/guides/assets/js/search.js"></script>
 
     </head>
     <body>
 		<nav>
 			<div>
     <div class="logo">Yukino</div>
-	<p style="margin: 0;">Guide</p>
+	<p>Guide</p>
+
+	<input id="search-input" type="text" placeholder="Enter something to search..." autocomplete="off">
+	<div style="position: relative;">
+		<div id="search-results-container" style="position: absolute; display: none; width: 100%; margin: 0.4rem 0 0 0; padding: 0; flex-direction: column; justify-content: center; align-items: center;">
+			<ul id="search-results" style="background-color: var(--primary-light); padding: 0.6rem 1.2rem; list-style-type: none; border-radius: var(--round); text-align: left;"></ul>
+		</div>
+	</div>
 </div>
 
 		</nav>
@@ -83,7 +92,7 @@
 			<div style="text-align: center; padding: 2rem 1rem; background-color: var(--primary); color: var(--light);">
 
 	<p style="margin-bottom: 0.2rem;">Made with ❤ by <b>Zyrouge</b></p>
-	<p style="margin: 0; opacity: 0.75; font-size: 0.8rem;">Last rendered on 6/5/2021, 2:13:10 PM UTC</p>
+	<p style="margin: 0; opacity: 0.75; font-size: 0.8rem;">Last rendered on 6/5/2021, 3:39:38 PM UTC</p>
 </div>
 
 		</footer>

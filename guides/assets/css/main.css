@@ -11,7 +11,7 @@
 	--gray-dark: #3F3F46;
 	--gray-darker: #27272A;
 	--gap: 1.8rem;
-	--round: 0.4rem;
+	--round: 0.3rem;
 }
 
 html {
@@ -166,4 +166,20 @@ main.gridify article {
 		height: min-content;
 		grid-column: span 1 / span 1;
 	}
+}
+
+#search-input {
+	padding: 0.7rem 1rem;
+	outline: none;
+	width: 80%;
+    max-width: 40rem;
+	border: none;
+	border-radius: var(--round);
+	background-color: var(--primary-light);
+	color: var(--light);
+}
+
+#search-input::placeholder {
+	color: var(--light);
+	opacity: 0.5;
 }

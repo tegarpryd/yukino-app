@@ -2,12 +2,30 @@
     "posts": [
         {
             "title": "Home",
-            "url": "/yukino-app/guides/index.html"
+            "url": "/yukino-app/guides/index.html",
+            "toc": []
         },
         {
             "title": "Installation",
-            "url": "/yukino-app/guides/posts/installation.html"
+            "url": "/yukino-app/guides/posts/installation.html",
+            "toc": [
+                {
+                    "title": "Downloading",
+                    "id": "downloading",
+                    "url": "/yukino-app/guides/posts/installation.html#downloading"
+                },
+                {
+                    "title": "Blocked by Windows SmartScreen",
+                    "id": "blocked-by-windows-smartscreen",
+                    "url": "/yukino-app/guides/posts/installation.html#blocked-by-windows-smartscreen"
+                },
+                {
+                    "title": "Blocked by Android Play Protect",
+                    "id": "blocked-by-android-play-protect",
+                    "url": "/yukino-app/guides/posts/installation.html#blocked-by-android-play-protect"
+                }
+            ]
         }
     ],
-    "lastUpdated": 1622902390928
+    "lastUpdated": 1622907578924
 }
