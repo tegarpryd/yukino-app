@@ -1,0 +1,13 @@
+{
+    "posts": [
+        {
+            "title": "Home",
+            "url": "/yukino-app/guides/index.html"
+        },
+        {
+            "title": "Installation",
+            "url": "/yukino-app/guides/posts/installation.html"
+        }
+    ],
+    "lastUpdated": 1622902390928
+}

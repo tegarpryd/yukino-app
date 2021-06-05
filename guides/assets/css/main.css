@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400&display=swap");
+
+:root {
+    --primary: #6366f1;
+	--primary-light: #818CF8;
+	--primary-dark: #4F46E5;
+    --light: #fff;
+    --dark: #18181b;
+	--gray-lighter: #F4F4F5;
+	--gray-light: #E4E4E7;
+	--gray-dark: #3F3F46;
+	--gray-darker: #27272A;
+	--gap: 1.8rem;
+	--round: 0.4rem;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+html body {
+    background-color: var(--light);
+    color: var(--dark);
+	max-height: 100vh;
+}
+
+html.dark body {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+	overflow-x: hidden;
+	font-size: 1rem;
+	line-height: 1.4;
+}
+
+h1 {
+	font-size: 2.3rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.7rem;
+}
+
+h4, h5, h6 {
+	font-size: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6, ul, p, img, .group {
+	margin-top: 0;
+	margin-bottom: var(--gap);
+}
+
+a {
+	color: var(--primary);
+	text-decoration: none;
+	transition: 0.2s;
+}
+
+a:hover {
+	color: var(--primary-dark);
+}
+
+html.dark a:hover {
+	color: var(--primary-light);
+}
+
+button {
+  background-color: var(--primary);
+  border: none;
+  outline: none;
+  color: var(--light);
+  font-size: 1rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: var(--round);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+	background-color: var(--primary-dark);
+}
+
+html.dark button:hover {
+	background-color: var(--primary-light);
+}
+
+code {
+	background: var(--gray-lighter);
+	border-radius: var(--round);
+	padding: 0.2rem 0.3rem;
+}
+
+html.dark code {
+	background: var(--gray-darker);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+nav {
+    text-align: center;
+    color: var(--light);
+    background-color: var(--primary);
+    padding: 4rem 1rem;
+}
+
+nav .logo {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+main {
+	margin: 3rem;
+}
+
+main.gridify {
+	display: grid;
+}
+
+main.gridify article {
+	order: 999;
+}
+
+@media screen and (min-width: 900px) {
+	main.gridify {
+		grid-template-columns: repeat(5, minmax(0, 1fr));
+		gap: 3rem;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	main.gridify > * {
+		padding: 3rem 0;
+	}
+
+	main.gridify aside {
+		position: sticky;
+		top: 0;
+		height: min-content;
+		grid-column: span 1 / span 1;
+	}
+
+	main.gridify article {
+		grid-column: span 3 / span 3;
+		order: initial;
+	}
+
+	main.gridify #toc {
+		position: sticky;
+		top: 0;
+		height: min-content;
+		grid-column: span 1 / span 1;
+	}
+}
