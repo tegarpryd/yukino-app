@@ -1,16 +1,1 @@
-document.addEventListener("DOMContentLoaded", () => {
-	const themeBtn = document.getElementById("theme-toggler");
-
-	const updateTheme = (isDark = localStorage.getItem("theme") === "dark") => {
-		document.documentElement.classList[isDark ? "add" : "remove"]("dark");
-		themeBtn.innerText = isDark ? "🌙" : "🌞";
-	};
-
-	updateTheme();
-
-	themeBtn.addEventListener("click", () => {
-		const isCurrentDark = localStorage.getItem("theme") === "dark";
-		localStorage.setItem("theme", isCurrentDark ? "light" : "dark");
-		updateTheme(!isCurrentDark);
-	});
-});
+document.addEventListener("DOMContentLoaded",(()=>{const e=document.getElementById("theme-toggler"),t=(t="dark"===localStorage.getItem("theme"))=>{document.documentElement.classList[t?"add":"remove"]("dark"),e.innerText=t?"🌙":"🌞"};t(),e.addEventListener("click",(()=>{const e="dark"===localStorage.getItem("theme");localStorage.setItem("theme",e?"light":"dark"),t(!e)}))}));
