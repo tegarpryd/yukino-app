@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-h1, h2, h3, h4, h5, h6, ul, p, img, .group {
+h1, h2, h3, h4, h5, h6, ul, p, img, blockquote, .group {
 	margin-top: 0;
 	margin-bottom: var(--gap);
 }
@@ -110,6 +110,26 @@ html.dark code {
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+blockquote {
+	background-color: var(--gray-lighter);
+    padding: 1rem;
+	overflow: hidden;
+	margin-left: 0;
+    border: none;
+	border-radius: var(--round);
+    border-left: 0.3rem solid;
+	border-color: var(--gray-light);
+}
+
+blockquote > *:last-child {
+	margin: 0;
+}
+
+html.dark blockquote {
+	background-color: var(--gray-darker);
+	border-color: var(--gray-dark);
 }
 
 nav {
