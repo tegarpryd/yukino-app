@@ -19,13 +19,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 	});
 
-
 	const fuse = new Fuse(searchData, {
 		includeScore: true,
 		keys: ["title"]
 	});
 
-	const updateSearch = () => {
+	["input"].forEach(x => searchInput.addEventListener(x, (e) => {
+		e.stopPropagation();
+
 		searchResultsContainer.style.display = "none";
 		searchResults.innerHTML = "";
 
@@ -33,13 +34,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 		if (!terms.length) return;
 
 		const results = fuse.search(terms);
-		if (!results) return searchResults.style.display = "none";
+		if (!results.length) return;
 
 		searchResultsContainer.style.display = "flex";
 		results.sort((a, b) => a.score - b.score).forEach(({ item }, i) => {
-			searchResults.innerHTML += `<li><a href="${item.url}" style="color: var(--light); width: 100%;"><span style="opacity: 0.75;">${i + 1}.</span> ${item.title}</a></li>`;
+			searchResults.innerHTML += `<a href="${item.url}" style="display: block; color: var(--light);"><span style="opacity: 0.7;">${i + 1}.</span> ${item.title}</a>`;
 		});
-	}
-
-	["change", "keydown", "keypress", "keyup"].forEach(e => searchInput.addEventListener(e, updateSearch));
+	}));
 });
