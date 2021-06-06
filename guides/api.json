@@ -3,7 +3,18 @@
         {
             "title": "Home",
             "url": "/yukino-app/guides/index.html",
-            "toc": []
+            "toc": [
+                {
+                    "title": "How do I use this wiki?",
+                    "id": "how-do-i-use-this-wiki",
+                    "url": "/yukino-app/guides/index.html#how-do-i-use-this-wiki"
+                },
+                {
+                    "title": "Links",
+                    "id": "links",
+                    "url": "/yukino-app/guides/index.html#links"
+                }
+            ]
         },
         {
             "title": "Installation",
@@ -27,5 +38,5 @@
             ]
         }
     ],
-    "lastUpdated": 1622983510779
+    "lastUpdated": 1622983920165
 }
