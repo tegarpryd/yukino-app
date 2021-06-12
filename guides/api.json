@@ -42,9 +42,34 @@
             "url": "/yukino-app/guides/posts/installation.html",
             "toc": [
                 {
+                    "title": "Requirements",
+                    "id": "requirements",
+                    "url": "/yukino-app/guides/posts/installation.html#requirements"
+                },
+                {
                     "title": "Downloading",
                     "id": "downloading",
                     "url": "/yukino-app/guides/posts/installation.html#downloading"
+                },
+                {
+                    "title": "Windows",
+                    "id": "windows",
+                    "url": "/yukino-app/guides/posts/installation.html#windows"
+                },
+                {
+                    "title": "Mac",
+                    "id": "mac",
+                    "url": "/yukino-app/guides/posts/installation.html#mac"
+                },
+                {
+                    "title": "Linux",
+                    "id": "linux",
+                    "url": "/yukino-app/guides/posts/installation.html#linux"
+                },
+                {
+                    "title": "Android",
+                    "id": "android",
+                    "url": "/yukino-app/guides/posts/installation.html#android"
                 },
                 {
                     "title": "Blocked by Windows SmartScreen",
@@ -59,5 +84,5 @@
             ]
         }
     ],
-    "lastUpdated": 1623472085138
+    "lastUpdated": 1623508756144
 }
